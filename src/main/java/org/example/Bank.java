@@ -15,7 +15,7 @@ class BankAcc
     String temp;
     int r;
 
-    bankacc()
+    BankAcc()
     {
 
 
