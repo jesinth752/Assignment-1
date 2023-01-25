@@ -2,7 +2,7 @@ package org.example;
 
 import  java.util.Scanner;
 
-class bankacc
+class BankAcc
 {
     Scanner input =new Scanner(System.in);
 
