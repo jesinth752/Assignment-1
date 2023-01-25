@@ -25,14 +25,16 @@ class BankAcc
 
     void deposit()
     {
-        System.out.println("Enter amount to deposit:");
+        
+        LOGGER.log(Level.INFO,"Enter amount to deposit:");
         double amt = input.nextDouble();
-        System.out.println("Deposit of Amount Rs "+amt+" is successful\n\n");
+        LOGGER.log(Level.INFO,"Deposit of Amount RS "+amt+" is successful\n\n");
         balance=balance+amt;
     }
     void withdrawl()
     {
-        System.out.println("Enter amount to withDrawl:");
+        
+        LOGGER.log(Level.INFO,"Enter amount to WithDrawl");
         double amt = input.nextDouble();
 
         if(amt<balance)
