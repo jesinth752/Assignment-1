@@ -7,7 +7,7 @@ class BankAcc
     Scanner input =new Scanner(System.in);
 
     String name;
-    Long acc_no;
+    Long accno;
     double balance=0;
 
     boolean t=true;
@@ -45,8 +45,8 @@ class BankAcc
 
         while (f) {
             System.out.print("Enter Account Number:");
-            acc_no = input.nextLong();
-            temp = String.valueOf(acc_no);
+            accno = input.nextLong();
+            temp = String.valueOf(accno);
 
             if(temp.length()>=12)
             {
@@ -90,7 +90,7 @@ class BankAcc
     void cbalance()
     {
         System.out.println("Account Name:"+name);
-        System.out.println("Account Number:"+acc_no);
+        System.out.println("Account Number:"+accno);
         System.out.println("Balance Amount:"+balance);
         System.out.println("\n\n");
     }
