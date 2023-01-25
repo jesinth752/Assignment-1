@@ -10,56 +10,15 @@ class BankAcc
     Long accno;
     double balance=0;
 
-    boolean t=true;
-    boolean f=true;
-    String temp;
-    int r;
+  
 
     BankAcc()
     {
 
-
-        while (t) {
-            r=0;
             System.out.print("Enter Account Name:");
             name = input.nextLine();
-            for(int i=0;i<name.length();i++)
-            {
-                if(name.charAt(i)>='a' && name.charAt(i)<='z'
-                        || name.charAt(i)>='A' && name.charAt(i)<='Z' || name.charAt(i)==32)
-                {
-                    r++;
-                }
-
-
-            }
-            if(r==name.length())
-            {
-                t=false;
-            }
-            else {
-                System.out.println("Invalid format it contains only alphabets \n example:JESINTH KUMAR\n");
-            }
-        }
-
-
-        while (f) {
             System.out.print("Enter Account Number:");
             accno = input.nextLong();
-            temp = String.valueOf(accno);
-
-            if(temp.length()>=12)
-            {
-                f=false;
-            }
-            else
-            {
-                System.out.println("your Account Number must contains Minimum 12 digit\n example:123456789xxx\n");
-            }
-        }
-
-
-
     }
 
     void deposit()
