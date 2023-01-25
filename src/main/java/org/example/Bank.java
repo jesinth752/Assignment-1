@@ -44,7 +44,7 @@ class BankAcc
         }
         else
         {
-            System.out.println("Insufficient Funds Try again\n\n");
+            LOGGER.log(Level.WARNING, "INSUFFICIENT FUNDS"); 
         }
 
     }
