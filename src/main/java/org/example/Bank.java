@@ -17,9 +17,12 @@ class BankAcc
     BankAcc()
     {
 
-            System.out.print("Enter Account Name:");
+            
+           LOGGER.log(Level.INFO,"Enter Account Name:");
             name = input.nextLine();
-            System.out.print("Enter Account Number:");
+           
+           LOGGER.log(Level.INFO,"Enter Account Number:");
+        
             accno = input.nextLong();
     }
 
