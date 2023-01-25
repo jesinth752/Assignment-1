@@ -50,10 +50,12 @@ class BankAcc
     }
     void cbalance()
     {
-        System.out.println("Account Name:"+name);
-        System.out.println("Account Number:"+accno);
-        System.out.println("Balance Amount:"+balance);
-        System.out.println("\n\n");
+       
+        LOGGER.log(Level.INFO, "Account Name:"+name); 
+        LOGGER.log(Level.INFO,"Account Number:"+accno); 
+        LOGGER.log(Level.INFO,"Balance Amount:"+balance); 
+      
+   
     }
 
 
@@ -66,20 +68,20 @@ public class Bank{
         Scanner input =new Scanner(System.in);
         int opt;
         do {
-            System.out.println("1.deposit\n2.ithdrawl\n3.check balance\n4.exit ");
-            System.out.println("Enter choice:");
+            LOGGER.log(Level.INFO,"1.deposit\n2.ithdrawl\n3.check balance\n4.exit ");
+            LOGGER.log(Level.INFO,"Enter choice:");
             opt = input.nextInt();
             if( opt!=4) {
                 switch (opt) {
                     case 1 -> obj.deposit();
                     case 2 -> obj.withdrawl();
                     case 3 -> obj.cbalance();
-                    default -> LOGGER.log(Level.WARNING, "INVALID"); 
+                    default -> LOGGER.log(Level.WARNING, "INVALID Option"); 
                 }
             }
 
         }while(opt!=4);
-        System.out.println("Thanking you ,Have a nice Day  ");
+        LOGGER.log(Level.INFO, "Thanking you, Have a nice day!"); 
     }
 }
 
