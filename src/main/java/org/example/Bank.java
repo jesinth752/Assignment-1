@@ -38,7 +38,7 @@ class BankAcc
         if(amt<balance)
         {
             balance=balance-amt;
-            System.out.println("WithDrawl of Amount RS "+amt+" is successful\n\n");
+            LOGGER.log(Level.INFO,"WithDrawl of Amount RS "+amt+" is successful\n\n");
 
 
         }
