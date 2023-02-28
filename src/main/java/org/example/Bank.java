@@ -17,8 +17,8 @@ public class Bank{
 
         int opt;
         do {
-         LOGGER.log(Level.info,"1.deposit\n2.withdrawl\n3.check balance\n4.exit ");
-          LOGGER.log(Level.info,"Enter choice:");
+            LOGGER.log(Level.INFO,"1.deposit\n2.withdrawl\n3.check balance\n4.exit ");
+            LOGGER.log(Level.INFO,"Enter choice:");
             opt = input.nextInt();
             if( opt!=4) {
                 switch (opt) {
@@ -30,7 +30,7 @@ public class Bank{
             }
 
         }while(opt!=4);
-        LOGGER.log("Thanking you ,Have a nice Day  ");
+        LOGGER.log(Level.INFO,"Thanking you ,Have a nice Day  ");
     }
 }
 
