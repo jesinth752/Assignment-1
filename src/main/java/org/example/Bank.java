@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class Bank{
 
 
-    private final static Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private static final Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void main(String[] args) {
 
         bankacc obj=new bankacc();
