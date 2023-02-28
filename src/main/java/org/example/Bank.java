@@ -17,8 +17,8 @@ public class Bank{
 
         int opt;
         do {
-            System.out.println("1.deposit\n2.withdrawl\n3.check balance\n4.exit ");
-            System.out.println("Enter choice:");
+         LOGGER.log(Level.info,"1.deposit\n2.withdrawl\n3.check balance\n4.exit ");
+          LOGGER.log(Level.info,"Enter choice:");
             opt = input.nextInt();
             if( opt!=4) {
                 switch (opt) {
@@ -30,7 +30,7 @@ public class Bank{
             }
 
         }while(opt!=4);
-        System.out.println("Thanking you ,Have a nice Day  ");
+        LOGGER.log("Thanking you ,Have a nice Day  ");
     }
 }
 
