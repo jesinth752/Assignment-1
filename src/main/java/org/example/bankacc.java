@@ -7,7 +7,7 @@ class Bankacc
     Scanner input =new Scanner(System.in);
 
     String name;
-    Long acc_no;
+    Long accno;
     double balance=0;
 
     boolean t=true;
@@ -45,8 +45,8 @@ class Bankacc
 
         while (f) {
             System.out.print("Enter Account Number:");
-            acc_no = input.nextLong();
-            temp = String.valueOf(acc_no);
+            accno = input.nextLong();
+            temp = String.valueOf(accno);
 
             if(temp.length()>=12)
             {
