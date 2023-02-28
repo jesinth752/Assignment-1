@@ -56,10 +56,13 @@ class Bankacc
     }
     void cbalance()
     {
-        LOGGER.log(Level.INFO,"Account Name:"+name);
-        LOGGER.log(Level.INFO,"Account Number:"+accno);
-        LOGGER.log(Level.INFO,"Balance Amount:"+balance);
-        LOGGER.log(Level.INFO,"\n\n");
+        String named="Account Name:"+name;
+        String accnod="Account Number:"+accno;
+        String balanced="Balance Amount:"+balance;
+        LOGGER.log(Level.INFO,named);
+        LOGGER.log(Level.INFO,accnod);
+        LOGGER.log(Level.INFO,balanced);
+
     }
 
 
