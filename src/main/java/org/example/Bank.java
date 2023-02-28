@@ -11,7 +11,7 @@ public class Bank{
     private static final Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void main(String[] args) {
 
-        bankacc obj=new bankacc();
+        Bankacc obj=new Bankacc();
 
         Scanner input =new Scanner(System.in);
 
